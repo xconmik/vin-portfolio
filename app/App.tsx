@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Menu, X, Github, Mail, Code2, Database, Palette, Rocket, Zap, Globe, Facebook, Layers } from 'lucide-react';
 import { motion } from 'motion/react';
+import logoImage from './assets/logo.png';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -43,7 +44,7 @@ export default function App() {
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
             <div className="w-[90px] md:w-[120px] h-12 md:h-16 flex items-center">
-              <span className="text-lg md:text-xl font-semibold tracking-wide">Vin Ferrer</span>
+              <img src={logoImage} alt="Vin Ferrer logo" className="w-full h-full object-contain" />
             </div>
 
             {/* Desktop Menu */}
